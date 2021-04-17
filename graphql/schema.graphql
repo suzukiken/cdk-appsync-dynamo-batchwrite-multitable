@@ -1,0 +1,22 @@
+type Product {
+  id: ID!
+  title: String!
+}
+type Variant {
+	id: ID!
+	size: Int!
+	productId: ID!
+}
+type Query {
+  listProducts: [ Product! ]!
+}
+input ProductInput {
+  title: String!
+}
+type BothItems {
+  cdkappsyncdynamobatchwritemultitableProduct: [ Product ]
+  cdkappsyncdynamobatchwritemultitableVariant: [ Variant ]
+}
+type Mutation {
+  addProductWithDefaultVariant(input: ProductInput!): BothItems
+}
