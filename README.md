@@ -5,4 +5,4 @@ To deploy AppSync Api with two Dynamo DB tables which write at once by batchwrit
 * `npm install`
 * `cdk deploy`
 
-[description](https://figmentresearch.com/aws/cdkappsync-dynamo-batchwrite-multitable)
+[description](https://note.figmentresearch.com/aws/cdkappsync-dynamo-batchwrite-multitable)
